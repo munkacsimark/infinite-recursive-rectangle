@@ -10,17 +10,12 @@ cache:
 script:
   - npm run test
   - npm run build:site
-
-jobs:
-  include:
-    - stage: test
-      script: npm run test
-    - stage: deploy
-      deploy:
-        provider: pages
-        skip_cleanup: true
-        github_token: $GITHUB_TOKEN
-        local_dir: site
-        on:
-          branch: master
+      
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: site
+  on:
+    branch: master
 
