@@ -9,13 +9,13 @@ cache:
 
 script:
   - npm run test
-  - npm run build:site
+#  - npm run build:site
       
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: site
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN
+#  local_dir: site
+#  on:
+#    branch: master
 
