@@ -1,0 +1,32 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#error {
+  color: #f00;
+  display: none;
+}
+
+#error.show {
+  display: block;
+}
+
+#content {
+  font-family: monospace;
+}
+
+#submit {
+  font-size: 16px;
+  border: none;
+  background-color:#218838;
+  border-color:#1e7e34;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+input {
+  font-size: 16px;
+  padding: 5px 10px;
+  width: 80px;
+}

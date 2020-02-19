@@ -73,14 +73,14 @@ const draw = (params: IDrawParams): Array<Array<number>> => {
 };
 
 const printPixelArray = (array: Array<Array<number>>): void => {
-  array.forEach(row =>
+  array.forEach((row: Array<number>) =>
     console.log(
       row
-        .map(num => pixels[num])
-        .reduce((str, char) => (str += char), "")
+        .map((num: number) => pixels[num])
+        .reduce((str: string, char: string) => (str += char), "")
     )
   );
 };
 
 export default draw;
-export { IDrawParams, printPixelArray };
+export { printPixelArray, pixels };

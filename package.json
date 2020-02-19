@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npm run build && node ./dist/index.js",
-    "build": "tsc --lib \"es6, dom\" --outDir ./dist ./src/index.ts",
-    "test": "npm run build && node ./test/test.js"
+    "start": "npm run build:node && node ./dist/index.js",
+    "build:site": "webpack --mode=production",
+    "build:node": "tsc --lib \"es6, dom\" --outDir ./dist ./src/index.ts",
+    "test": "npm run build:node && node ./test/test.js"
   },
-  "author": "",
+  "author": "Mark Munkacsi <munkacsimark@gmail.com> (http://codermark.dev/)",
   "license": "ISC",
-  "dependencies": {
-    "typescript": "^3.7.5"
+  "devDependencies": {
+    "@types/node": "^13.7.2",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
   }
 }
