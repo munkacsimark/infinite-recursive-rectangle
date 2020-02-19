@@ -1,0 +1,15 @@
+{
+  "name": "tradeling_challenge",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && node ./dist/index.js",
+    "build": "tsc --lib \"es6, dom\" --outDir ./dist ./src/index.ts",
+    "test": "npm run build && node ./test/test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^3.7.5"
+  }
+}
