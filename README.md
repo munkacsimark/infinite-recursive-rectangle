@@ -4,7 +4,7 @@
 
 Rectangle generator written in Typescript using recursive function.
 
-## Install and test
+## Install and testing
 
 ### 1. Install dependencies
 
@@ -36,4 +36,15 @@ $ npm run test
 
 ## Complexity
 
-// TODO
+O(2^n) - exponential
+
+## 5. Screenshots
+
+### Input: 20, 40, 6
+![20-40-6](./docs/20-40-6.png)
+
+### Input: 60, 60, 10
+![60-60-10](./docs/60-60-10.png)
+
+### Input: 80, 20, 16
+![80-20-16](./docs/80-20-16.png)
